@@ -5,7 +5,7 @@
 
 :root {
   --primary: #6e6088;
-  --black: #000000;
+  --black: #000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
@@ -24,3 +24,9 @@ body {
 a {
   color: inherit;
 } 
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -2,6 +2,13 @@
   "short_name": "Beaflix",
   "name": "Beaflix",
   "start_url": ".",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
