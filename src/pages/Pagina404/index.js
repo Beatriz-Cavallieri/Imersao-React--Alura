@@ -1,5 +1,5 @@
 import React from 'react'
-import Template from '../Template'
+import Template from '../../components/Template'
 
 export default function Pagina404() {
     return (
