@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Template from '../../components/Template'
 import FormField from './FormField'
+import Button from '../../components/Button'
 
 export default function CadastroCategoria() {
     const [categorias, setCategorias] = useState([])
@@ -42,24 +43,27 @@ export default function CadastroCategoria() {
                     name='nome'
                     value={values.nome}
                     onChange={handleChange}
+                    inputType='input'
                 />
                 <FormField
                     label='Descrição:'
-                    type='textarea'
+                    type='text'
                     name='descricao'
                     value={values.descricao}
                     onChange={handleChange}
+                    inputType='textarea'
                 />
                 <FormField
-                    label='Cor da categoria:'
+                    label='Cor:'
                     type='color'
                     name='cor'
                     value={values.cor}
                     onChange={handleChange}
+                    inputType='input'
                 />
-                <button>
+                <Button>
                     Cadastrar
-                </button>
+                </Button>
                 <ul>
                     {categorias.map((categoria) => {
                         return <li key={categoria.nome}>
